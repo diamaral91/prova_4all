@@ -1,7 +1,0 @@
-support\ExtentTestManager.class
-support\DriverWait.class
-pages\HomePage.class
-pages\CarrinhoComprasPage.class
-support\ExtentManager.class
-support\TestBase.class
-support\Browsers.class
