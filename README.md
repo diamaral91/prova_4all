@@ -7,10 +7,10 @@ Para execução dos seguintes testes:
 
 Informe Chrome ou Firefox para selecionar o browser
 
-*mvn clean test -Dtest=<nome-do-teste> -Denv.BROWSER=<browser>*
+*mvn clean test -Dtest=DesafioUmTest -Denv.BROWSER=firefox*
 
 Para execução da suíte em paralelo
 
-*mvn clean test -Dsuite.testng=desafios -Denv.BROWSER=<browser>*
+*mvn clean test -Dsuite.testng=desafios -Denv.BROWSER=chrome*
 
 Sera gerado report com nome de Extent.html na raiz do projeto
