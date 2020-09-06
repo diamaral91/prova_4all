@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Desafios" verbose="1" parallel="methods" thread-count="2">
+    <test name="desafio" >
+        <classes>
+            <class name="tests.DesafioUmTest" />
+            <class name="tests.DesafioDoisTest" />
+        </classes>
+    </test>
+</suite>

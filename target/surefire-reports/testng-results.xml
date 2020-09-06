@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Desafios" duration-ms="41848" started-at="2020-09-05T22:39:29 BRT" finished-at="2020-09-05T22:40:11 BRT">
+    <groups>
+    </groups>
+    <test name="desafio" duration-ms="41848" started-at="2020-09-05T22:39:29 BRT" finished-at="2020-09-05T22:40:11 BRT">
+      <class name="tests.DesafioUmTest">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:tests.DesafioUmTest@271053e1]" name="beforeMethod" is-config="true" duration-ms="25424" started-at="2020-09-05T22:39:29 BRT" finished-at="2020-09-05T22:39:55 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.DesafioUmTest.desafioUm()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="desafioUm()[pri:0, instance:tests.DesafioUmTest@271053e1]" name="desafioUm" duration-ms="6449" started-at="2020-09-05T22:39:55 BRT" finished-at="2020-09-05T22:40:01 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- desafioUm -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.DesafioUmTest@271053e1]" name="afterMethod" is-config="true" duration-ms="8479" started-at="2020-09-05T22:40:01 BRT" finished-at="2020-09-05T22:40:10 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=desafioUm status=SUCCESS method=DesafioUmTest.desafioUm()[pri:0, instance:tests.DesafioUmTest@271053e1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- tests.DesafioUmTest -->
+      <class name="tests.DesafioDoisTest">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:tests.DesafioDoisTest@589838eb]" name="beforeMethod" is-config="true" duration-ms="25424" started-at="2020-09-05T22:39:29 BRT" finished-at="2020-09-05T22:39:55 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.DesafioDoisTest.desafioDois()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="desafioDois()[pri:0, instance:tests.DesafioDoisTest@589838eb]" name="desafioDois" duration-ms="10620" started-at="2020-09-05T22:39:55 BRT" finished-at="2020-09-05T22:40:06 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- desafioDois -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.DesafioDoisTest@589838eb]" name="afterMethod" is-config="true" duration-ms="5731" started-at="2020-09-05T22:40:06 BRT" finished-at="2020-09-05T22:40:11 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=desafioDois status=SUCCESS method=DesafioDoisTest.desafioDois()[pri:0, instance:tests.DesafioDoisTest@589838eb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- tests.DesafioDoisTest -->
+    </test> <!-- desafio -->
+  </suite> <!-- Desafios -->
+</testng-results>
