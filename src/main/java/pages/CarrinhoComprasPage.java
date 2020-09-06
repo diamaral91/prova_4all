@@ -28,7 +28,7 @@ public class CarrinhoComprasPage {
                 break;
             }
         }
-        ExtentTestManager.getTest().log(LogStatus.INFO, "adicionar " + product + " por " + quantidade + "x");
+        ExtentTestManager.getTest().log(LogStatus.INFO, "adicionar +" + quantidade + product);
         return this;
     }
 
@@ -42,7 +42,7 @@ public class CarrinhoComprasPage {
                 break;
             }
         }
-        ExtentTestManager.getTest().log(LogStatus.INFO, "adicionar " + product + " por " + quantidade + "x");
+        ExtentTestManager.getTest().log(LogStatus.INFO, "remover +" + quantidade + product);
         return this;
     }
 
