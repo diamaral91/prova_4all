@@ -1,10 +1,10 @@
 package pages;
 
 import com.relevantcodes.extentreports.LogStatus;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.logging.Logs;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import support.DriverWait;
 import support.ExtentTestManager;
 
@@ -16,6 +16,7 @@ public class HomePage {
 
     public HomePage(WebDriver driver) {
         wait = new DriverWait(driver);
+        PageFactory.initElements(driver, this);
     }
 
     public HomePage clickCategory(){
@@ -56,10 +57,18 @@ public class HomePage {
         return this;
     }
 
-    By selecioneCategoria = By.id("open-categories-btn");
-    By categorias = By.xpath("//li[contains(@id,'category')]");
-    By carrinho = By.id("cart-btn");
-    By nomeProduto = By.xpath("//h1[contains(@data-id,'name')]");
-    By adicionarAoCarrinho = By.xpath("//button[contains(@id,'add-product')]");
+    @FindBy(id = "open-categories-btn")
+    private WebElement selecioneCategoria;
 
+    @FindBy(xpath = "//li[contains(@id,'category')]")
+    private List<WebElement> categorias;
+
+    @FindBy(id = "cart-btn")
+    private WebElement carrinho;
+
+    @FindBy(xpath = "//h1[contains(@data-id,'name')]")
+    private List<WebElement> nomeProduto;
+
+    @FindBy(xpath = "//button[contains(@id,'add-product')]")
+    private List<WebElement> adicionarAoCarrinho;
 }

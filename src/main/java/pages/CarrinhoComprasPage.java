@@ -1,10 +1,10 @@
 package pages;
 
-import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.LogStatus;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import support.DriverWait;
 import support.ExtentTestManager;
 
@@ -16,6 +16,7 @@ public class CarrinhoComprasPage {
 
     public CarrinhoComprasPage(WebDriver driver){
         wait = new DriverWait(driver);
+        PageFactory.initElements(driver, this);
     }
 
     public CarrinhoComprasPage clickAddProduct(String product, int quantidade){
@@ -64,11 +65,24 @@ public class CarrinhoComprasPage {
         return this;
     }
 
-    By produtos = By.xpath("//div[contains(@id,'name')]");
-    By adicionarProduto = By.xpath("//div[contains(@id,'add-product')]");
-    By removeProduto = By.xpath("//div[contains(@id,'remove-product')]");
-    By valorTotal = By.id("price-total-checkout");
-    By finalizarPedido = By.id("finish-checkout-button");
-    By menssagem = By.cssSelector("div[role=\"dialog\"] > div > h2");
-    By fechar = By.xpath("//button[text()='Fechar']");
+    @FindBy(xpath = "//div[contains(@id,'name')]")
+    private List<WebElement> produtos;
+
+    @FindBy(xpath = "//div[contains(@id,'add-product')]")
+    private List<WebElement> adicionarProduto;
+
+    @FindBy(xpath = "//div[contains(@id,'remove-product')]")
+    private List<WebElement> removeProduto;
+
+    @FindBy(id = "price-total-checkout")
+    private WebElement valorTotal;
+
+    @FindBy(id = "finish-checkout-button")
+    private WebElement finalizarPedido;
+
+    @FindBy(css = "div[role=\"dialog\"] > div > h2")
+    private WebElement menssagem;
+
+    @FindBy(xpath = "//button[text()='Fechar']")
+    private WebElement fechar;
 }
