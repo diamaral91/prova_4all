@@ -54,5 +54,4 @@ public class TestBase {
         String scnShot = newScreen.getScreenshotAs(OutputType.BASE64);
         return "data:image/jpg;base64, " + scnShot ;
     }
-
 }

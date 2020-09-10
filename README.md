@@ -17,6 +17,5 @@ Sera gerado report com nome de Extent.html na raiz do projeto
 
 
 * Foi criada uma branch "develop" utilizando design patterns page factory
-* Foi refatorado o método para criação de relatórios informando a data e hora da execução em sua nomenclatura
-* Branch develop está utilizando framework cucumber em bdd e em seu relatorio de testes 
+* Foi refatorado o método para criação de relatórios informando a data e hora da execução em sua nomenclatura 
  
