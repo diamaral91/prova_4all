@@ -22,7 +22,7 @@ public class TestBase {
     @BeforeMethod
     public void beforeMethod(Method method, @Optional("") String environment) {
         driver = Browsers.setBrowser(environment);
-        driver.get("https://shopcart-challenge.4all.com/");
+        driver.get("https:site.com/");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
 
