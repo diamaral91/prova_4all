@@ -1,6 +1,6 @@
-# prova_4all
+# prova para vaga de automa√ß√£o
 
-Para execuÁ„o dos seguintes testes:
+Para execu√ß√£o dos seguintes testes:
 
 - DesafioUmTest
 - DesafioDoisTest
@@ -9,7 +9,7 @@ Informe Chrome ou Firefox para selecionar o browser
 
 *mvn clean test -Dtest=DesafioUmTest -Denv.BROWSER=firefox*
 
-Para execuÁ„o da suÌte em paralelo
+Para execu√ß√£o da su√≠te em paralelo
 
 *mvn clean test -Dsuite.testng=desafios -Denv.BROWSER=chrome*
 
